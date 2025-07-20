@@ -6,7 +6,9 @@
   --primary-accent-color: #2e2f42;
   --secondary-accent-color: #434455;
   --hover-color: #404bbf;
-  --hover-color-icon: #31d0aa;
+  --hover-color-social: #31d0aa;
+  --background-color-social: #4d5ae5;
+  --color-icon: #f4f4fd;
 }
 
 body {
@@ -193,6 +195,7 @@ img {
   height: 56px;
   border: none;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .button-hero:hover,
@@ -223,11 +226,12 @@ img {
 .icon-advantages {
   border: 1px solid #8e8f99;
   border-radius: 4px;
-  padding: 24px 0;
   background: #f4f4fd;
   margin-bottom: 8px;
+  height: 112px;
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 
 .advantages-item {
@@ -307,20 +311,14 @@ img {
 
 .mark-social-list {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  gap: 24px;
 }
 
 .icon-team {
   width: 40px;
   height: 40px;
-  background-color: #4d5ae5;
-  border-radius: 50px;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.icon-team:hover,
-.icon-team:focus {
-  background-color: var(--hover-color-icon);
 }
 
 .icon-team-link {
@@ -329,10 +327,17 @@ img {
   height: 100%;
   justify-content: center;
   align-items: center;
+  background-color: var(--background-color-social);
+  border-radius: 50px;
+}
+
+.icon-team-link:hover,
+.icon-team-link:focus {
+  background-color: var(--hover-color-social);
 }
 
 .icon {
-  fill: #fff;
+  fill: var(--color-icon);
 }
 
 /* section-4  Our Portfolio */
@@ -392,7 +397,7 @@ img {
   height: 100%;
   background-color: #4d5ae5;
   transform: translateY(100%);
-  transition: transform 25ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   line-height: 1.5;
   color: #f4f4fd;
   padding: 40px 32px;
@@ -408,6 +413,9 @@ img {
   padding: 100px 0;
 }
 
+.container-logo {
+  margin-right: 120px;
+}
 .page-basement {
   line-height: 1.5;
   color: #f4f4fd;
@@ -425,7 +433,7 @@ img {
 
 .container-basement {
   display: flex;
-  gap: 120px;
+  align-items: baseline;
 }
 
 .footer-social-list {
@@ -438,12 +446,4 @@ img {
   line-height: 1.5;
   color: #fff;
   margin-bottom: 16px;
-}
-
-.footer-icon-link {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
