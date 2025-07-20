@@ -282,10 +282,7 @@ img {
 .our-team-title-under-img {
   display: block;
   text-align: center;
-  margin-left: auto;
-  margin-right: auto;
   padding: 32px 0;
-  max-width: 232px;
 }
 
 .title-our-team {
